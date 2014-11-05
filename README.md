@@ -3,8 +3,9 @@ JSDependencyMapper
 
 This little module allows you to map dependencies in an existing project (like in requirejs).  This project is meant to assist in the maintainability of existing software projects which are reliant on javascript files loading synchronously.
 
-EX:
+EX: (Place the following code in the head of you webpage)
 
+<script>
 var deps = { //Example
 		paths:{
 			jquery: '/path/to/js.js',
@@ -30,3 +31,4 @@ var deps = { //Example
 
 	DM.init(deps);
 	DM.print();
+</script>
